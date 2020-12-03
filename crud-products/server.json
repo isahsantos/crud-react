@@ -1,0 +1,25 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "Lapis Faber Castell",
+      "price": "16.90",
+      "qtde": 4,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Papel Oficio",
+      "price": "6.90",
+      "qtde": 3,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Caneta Bic",
+      "price": "1.90",
+      "qtde": 6,
+      "available": true
+    }
+  ]
+}
