@@ -1,5 +1,10 @@
 h5 {
   font-family: "Noto Sans", sans-serif;
+  margin: 3%;
+  font-size: 30px;
+}
+.card-title{
+  font-family: "Noto Sans", sans-serif;
 }
 .card {
   width: 50%;
@@ -10,6 +15,21 @@ h5 {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
-.error{
-  color: red;
+.header{
+  display: inline;
+  background-color:transparent;
+  height: 30%;
+}
+.cancel{
+  margin: 0;
+  color: #e5383b;
+  float: right;
+  margin-top: 0;
+  margin-right: 1%
+}
+.cancel :hover{
+  margin: 0;
+  color:red;
+  float: right;
+  margin-top: 0;
 }

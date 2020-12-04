@@ -1,0 +1,14 @@
+.edit {
+  color: gray;
+  margin: 2px;
+}
+.edit :hover {
+  color: black;
+}
+.danger {
+  margin: 5px;
+  color: #e5383b;
+}
+.danger :hover {
+  color: red;
+}

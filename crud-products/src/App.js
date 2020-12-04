@@ -3,6 +3,8 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
 import ProductList from './components/ProductList'
 import CreateProduct from './components/CreateProducts'
+import EditProducts from './components/EditProducts'
+
 
 const App = () => {
     return (
@@ -24,9 +26,7 @@ const App = () => {
                 <br />
                 <Route path="/" exact component={ProductList}></Route>
                 <Route path="/create" exact component={CreateProduct}></Route>
-                {/* <Route path="/details/:id" exact component={PostDetails}></Route>
-                <Route path="/delete/:id" exact component={DeletePost}></Route>
-                <Route path="/edit/:id" exact component={EditPost}></Route> */}
+                <Route path="/edit/:id" exact component={EditProducts}></Route>
             </div>
         </BrowserRouter>
     );
