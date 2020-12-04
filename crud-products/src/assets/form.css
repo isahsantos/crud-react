@@ -1,0 +1,15 @@
+h5 {
+  font-family: "Noto Sans", sans-serif;
+}
+.card {
+  width: 50%;
+  margin: 0 auto;
+  align-content: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.error{
+  color: red;
+}
