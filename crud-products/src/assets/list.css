@@ -12,3 +12,19 @@
 .danger :hover {
   color: red;
 }
+
+.container{
+  margin-top: 40px ;
+}
+p{
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 3%;
+  float: center;
+  font-size:10px;
+}
+img{
+  margin-right: 20px;
+}
+.MuiTableHead-root{
+  background-color: #2196f3;
+}
