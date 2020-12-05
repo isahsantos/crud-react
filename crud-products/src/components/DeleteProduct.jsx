@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import CancelIcon from "@material-ui/icons/Cancel";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import "../assets/styles/form.css";
+
 import axios from "axios";
 
 const useStyles = makeStyles({
@@ -32,29 +34,37 @@ const DeletePost = (props) => {
 
   return (
     <div className="card">
-      <h3>
-        Deseja excluir o produto <strong>{product?.name}</strong>?
-      </h3>
-      <br />
+      <div className="header">
+        <Link to="/" className="cancel">
+          <CancelIcon></CancelIcon>
+        </Link>
+        <h5>Excluir Produto</h5>
+      </div>
+      <div className="card-body">
+        <div className="card-text">
+          <h6>Deseja excluir o produto descrito abaixo?</h6>
+        </div>
+        <h6>
+          ID:<strong>{product?.id}</strong>
+        </h6>
+        <h6>
+          Nome:<strong>{product?.name}</strong>
+        </h6>
+        <br />
         <Button
-          color="primary"
-          variant="contained"
-          startIcon={<ArrowBackIcon />}
-          disableElevation
-        >
-          <Link style={{ textDecoration: 'none' }} to="/">Voltar</Link>
-        </Button>
-        <Button
-          color="secondary"
           type="submit"
+          variant="contained"
+          color="secondary"
+          size="medium"
           onClick={handleRemoveProduct}
           variant="contained"
+          className={classes.button}
           startIcon={<DeleteIcon />}
-          disableElevation
         >
           Excluir
         </Button>
       </div>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../assets/form.css";
+import "../assets/styles/form.css";
 import Button from "@material-ui/core/Button";
 import CancelIcon from "@material-ui/icons/Cancel";
 import { makeStyles } from "@material-ui/core/styles";
@@ -108,7 +108,7 @@ const CreateProduct = (props) => {
         </div>
       </div>
     </div>
-   
+
   );
 
 };

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-
+import Grid from "@material-ui/core/Grid";
 import { NavLink } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { Link } from "react-router-dom";
-import "../assets/list.css";
 import axios from "axios";
 import Container from "@material-ui/core/Container";
 import Table from "@material-ui/core/Table";
@@ -17,7 +16,17 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import RegisterIcon from "../assets/img/register.svg";
 import SearchBar from "./Search";
-import Grid from "@material-ui/core/Grid";
+import "../assets/styles/list.css";
+//Sessão de estilo material
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
 const useStylesPaper = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,16 +39,12 @@ const useStylesPaper = makeStyles((theme) => ({
 }));
 const useStyles = makeStyles({
   root: {
-    marginTop: "50px",
+    marginTop: "30px",
     minWidth: 275,
   },
   bullet: {
     display: "inline-block",
-    margin: "0 2px",
     transform: "scale(0.8)",
-  },
-  title: {
-    fontSize: 14,
   },
   pos: {
     marginBottom: 12,
@@ -49,6 +54,7 @@ const useStyles = makeStyles({
     padding: "10px",
   },
 });
+//Iniciação do componente
 const PostList = () => {
   const [input, setInput] = useState("");
   const [productListDefault, setProductListDefault] = useState();
@@ -62,6 +68,7 @@ const PostList = () => {
       setProductListDefault(result.data);
     });
   }, []);
+  //Update para o campo de busca
   const updateInput = async (input) => {
     const filtered = productListDefault.filter((product) => {
       return product.name.toLowerCase().includes(input.toLowerCase());
@@ -77,7 +84,12 @@ const PostList = () => {
           <Grid item xs={4}>
             <Paper className={classesPaper.paper}>
               <p>Cadastre um Produto:</p>
-              <img src={RegisterIcon} width="40px" heigth="40px" />
+              <img
+                className="icon"
+                src={RegisterIcon}
+                width="40px"
+                heigth="40px"
+              />
               <NavLink to="/create">Ir para o cadastro</NavLink>
             </Paper>
           </Grid>
@@ -97,12 +109,12 @@ const PostList = () => {
         >
           <TableHead>
             <TableRow>
-              <TableCell>ID</TableCell>
-              <TableCell align="right">Nome</TableCell>
-              <TableCell align="right">Quantidade</TableCell>
-              <TableCell align="right">Valor Unitario</TableCell>
-              <TableCell align="right">Valor Total</TableCell>
-              <TableCell align="right">Actions</TableCell>
+              <StyledTableCell>ID</StyledTableCell>
+              <StyledTableCell align="right">Nome</StyledTableCell>
+              <StyledTableCell align="right">Quantidade</StyledTableCell>
+              <StyledTableCell align="right">Valor Unitario</StyledTableCell>
+              <StyledTableCell align="right">Valor Total</StyledTableCell>
+              <StyledTableCell align="right">Actions</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>

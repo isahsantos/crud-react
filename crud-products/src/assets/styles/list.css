@@ -22,9 +22,6 @@ p{
   float: center;
   font-size:10px;
 }
-img{
-  margin-right: 20px;
-}
-.MuiTableHead-root{
-  background-color: #2196f3;
+.icon{
+  margin-right:5%;
 }

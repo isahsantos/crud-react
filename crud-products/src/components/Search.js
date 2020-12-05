@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/search.css'
+import '../assets/styles/search.css'
 import SearchIcon from '@material-ui/icons/Search';
 const SearchBar =  ({input:keyword, onChange:setKeyword})  => {
   console.log("Iput",setKeyword)

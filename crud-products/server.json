@@ -1,28 +1,23 @@
 {
   "lists": [
     {
-      "name": "teste",
-      "qtde": "5",
-      "price": "0.20",
-      "id": 16
+      "id": 1,
+      "name": "Lapis Faber Castell",
+      "price": "16.90",
+      "qtde": 4
     },
     {
-      "name": "teste",
-      "qtde": "2",
-      "price": "3",
-      "id": 17
+      "id": 2,
+      "name": "Papel Oficio",
+      "price": "6.90",
+      "qtde": 3
+      
     },
     {
-      "name": "teste",
-      "qtde": "3",
-      "price": "1",
-      "id": 18
-    },
-    {
-      "name": "Caneta Azul",
-      "qtde": "5",
-      "price": "0.80",
-      "id": 19
+      "id": 3,
+      "name": "Caneta Bic",
+      "price": "1.90",
+      "qtde": 6
     }
   ]
 }

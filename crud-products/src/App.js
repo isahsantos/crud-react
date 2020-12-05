@@ -5,13 +5,12 @@ import ProductList from './components/ProductList'
 import CreateProduct from './components/CreateProducts'
 import DeleteProduct from './components/DeleteProduct'
 import EditProducts from './components/EditProducts'
+import Header from './components/Header'
 
 const App = () => {
     return (
         <BrowserRouter>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <NavLink to="/" className="navbar-brand">Produtos </NavLink>
-            </nav>
+            <Header></Header>
             <div className="container">
                 <br />
                 <Route path="/" exact component={ProductList}></Route>
@@ -20,6 +19,7 @@ const App = () => {
                 <Route path="/delete/:id" exact component={DeleteProduct}></Route>
             </div>
         </BrowserRouter>
+        
     );
 }
 

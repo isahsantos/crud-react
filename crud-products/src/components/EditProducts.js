@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import SaveIcon from "@material-ui/icons/Save";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
-import "../assets/form.css";
+import "../assets/styles/form.css";
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
@@ -70,7 +70,7 @@ const EditPost = (props) => {
               </small>
             </div>
             <div className="form-group">
-            <label>Quantidade em Estoque:</label>
+              <label>Quantidade em Estoque:</label>
               <input
                 type="number"
                 className="form-control"
@@ -99,7 +99,10 @@ const EditPost = (props) => {
                 className="form-control"
                 ref={register({
                   required: { value: true, required: true },
-                  min: { value: 0.1, message: "Valor precisa ser maior que 0!" },
+                  min: {
+                    value: 0.1,
+                    message: "Valor precisa ser maior que 0!",
+                  },
                 })}
               ></input>
               <small className="form-text text-danger">
