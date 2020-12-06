@@ -18,4 +18,8 @@ Desta forma a aplicação e api estará sendo executada localmente.
 
 ## O que contem na aplicação?  📁 
 
-Esta aplicação contém um crud feito em react onde temos cadastro, edição e remoção de produtos,para este "crud" funcionar utilizei react form, react router, este crud em em especial algumas regras como por exemplo restrições de quantidades e restrição de campos com valores vazios, todas as restrições foram tratadas com o auxilio do react form. Para mais detalhes, favorite este repositorio, clone ou rode localmente ... 🤘 💻 💻 💻
+Esta aplicação contém um crud feito em react onde temos cadastro, edição e remoção de produtos,para este "crud" funcionar utilizei react form, react router, esta aplicação funcionar foi utilizados algumas bibliotecas. 
+Das utilizadas destaco estas:
+react-hook-form (Para os formulários da página)
+resct-router (Para rotas das aplicações)
+Este crud contém regras como por exemplo restrições de quantidades e restrição de campos com valores vazios, todas as restrições foram tratadas com o auxilio do react hook form. Para mais detalhes clone e rode localmente ... 🤘 💻 💻 💻
