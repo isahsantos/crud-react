@@ -6,11 +6,15 @@ Este projeto foi desenvolvido utilizando React JS e para op Backend uma fake api
 
 ### Servindo a aplicação localmente: 
 
-Primeiro será necessário ir para a pasta crud-products (através do seu cmd) dar start na api com o comando:
+Primeiro será necessário instalar as dependencias: 
+
+`yarn install`
+
+Startar a fake api com o comando:
 
  `yarn json-server server.json -p 5000`
 
-Após startar a fake api é só inciar a aplicação com o seguinte comando: 
+Após startar a fake api é só executar a aplicação com o seguinte comando: 
 
 `yarn start`
 
