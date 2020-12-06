@@ -53,7 +53,6 @@ const DeletePost = (props) => {
         <br />
         <Button
           type="submit"
-          variant="contained"
           color="secondary"
           size="medium"
           onClick={handleRemoveProduct}

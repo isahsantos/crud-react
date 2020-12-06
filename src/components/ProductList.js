@@ -86,6 +86,7 @@ const PostList = () => {
               <p>Cadastre um Produto:</p>
               <img
                 className="icon"
+                alt="Icone de cadastro"
                 src={RegisterIcon}
                 width="40px"
                 heigth="40px"

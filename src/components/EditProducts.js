@@ -27,6 +27,7 @@ const EditPost = (props) => {
       setValue("qtde", result.data.qtde);
       setValue("price", result.data.price);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const onSubmit = (data) => {
@@ -57,7 +58,7 @@ const EditPost = (props) => {
               />
             </div>
             <div className="form-group">
-              <label>Nome do Produto:+</label>
+              <label>Nome do Produto:</label>
               <input
                 type="text"
                 className="form-control"
@@ -65,7 +66,6 @@ const EditPost = (props) => {
                 ref={register({ required: true })}
               />
               <small className="form-text text-danger">
-                {" "}
                 {errors.name && "O Produto precisa ter um nome !"}
               </small>
             </div>

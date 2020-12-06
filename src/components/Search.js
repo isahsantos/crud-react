@@ -11,9 +11,9 @@ const SearchBar =  ({input:keyword, onChange:setKeyword})  => {
      placeholder={"Busque por um produto"}
      onChange={(e) => setKeyword(e.target.value)}
     />
-    <a href="#" class="search-button">
+    <p className="search-button">
   <SearchIcon></SearchIcon>
-  </a>
+  </p>
   </div>
   );
 }
